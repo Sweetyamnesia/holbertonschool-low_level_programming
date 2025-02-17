@@ -1,0 +1,1 @@
+We start to learn how to programming with C
