@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
 /**
 * main - Entry point
 * Description : The main function will be called without any parameters.
@@ -10,10 +9,10 @@
 
 int main(void)
 {
-char ch;
+int ch;
 for (ch = 'a' ; ch <= 'z' ; ch++)
-{
 putchar(ch);
-}
-return (0);
+putchar ('\n');
+for (ch = 'A' ; ch <= 'Z' ; ch++)
+putchar(ch);
 }
