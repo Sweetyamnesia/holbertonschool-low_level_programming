@@ -12,10 +12,10 @@
 int main(void)
 
 {
-char str;
-for (str = 'z'; str <= 'a'; str--)
+char ch;
+for (ch = 'z'; ch <= 'a'; ch--)
 {
-putchar(str);
+putchar(ch);
 }
 putchar('\n');
 return (0);
