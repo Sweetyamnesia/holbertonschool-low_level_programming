@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <string.h>
 
 /**
 * main - Entry point
@@ -12,6 +13,7 @@ int main(void)
 
 {
 char ch;
+char reverse_string(char str);
 for (ch = 'z'; ch <= 'a'; ch++)
 {
 putchar(ch);
