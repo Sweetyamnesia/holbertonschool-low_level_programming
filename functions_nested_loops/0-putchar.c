@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include "main.h"
 /**
 * main - Entry point
 * Description : The main function will be called without any parameters.
