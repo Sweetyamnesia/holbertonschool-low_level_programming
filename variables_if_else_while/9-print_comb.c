@@ -10,20 +10,13 @@
 int main(void)
 {
 int n;
-for (n = '0'; n < '9'; n++)
+for (n = '0'; n <= '9'; n++)
 {
 putchar(n);
-}
-for (n = '0'; n < '9'; n++)
-{
+if (n != '9')
 putchar(',');
-}
-for (n = '0'; n < '9'; n++)
-{
 putchar(' ');
 }
-{
 putchar('\n');
-}
 return (0);
 }
