@@ -1,0 +1,1 @@
+We are programming with C and we are learning how to use functions and nested loops.
