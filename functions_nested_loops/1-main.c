@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
-* main - check the code
-*
-* Return : Always 0.
+* main - Entry point
+* Description : The main function will be called without any parameters.
+*Return: Always 0 (Success)
 */
 
 int main(void)
