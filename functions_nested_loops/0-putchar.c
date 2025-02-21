@@ -9,8 +9,11 @@
 
 int main(void)
 {
-char message[] = "_putchar";
-printf("%s", message);
+const char *str = "_putchar";
+while (*str)
+{
+putchar(*str++);
+}
 putchar('\n');
 return (0);
 }
