@@ -8,24 +8,16 @@
 * _putchar - Prints a character to the standard output.
 */
 
-int _putchar(char c)
-{
-int n = 0;
-n = write(1, &c, 1);
-return (n);
-}
-
 int main(void)
 {
-int m = 0;
-m = _putchar('_');
-m = _putchar('p');
-m = _putchar('u');
-m = _putchar('t');
-m = _putchar('c');
-m = _putchar('h');
-m = _putchar('a');
-m = _putchar('r');
-m = _putchar('\n');
+_putchar('_');
+_putchar('p');
+_putchar('u');
+_putchar('t');
+_putchar('c');
+_putchar('h');
+_putchar('a');
+_putchar('r');
+_putchar('\n');
 return (0);
 }
