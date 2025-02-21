@@ -2,22 +2,19 @@
 #include <stdlib.h>
 #include "main.h"
 /**
-* print_alphabet_x10 - use to print alphabet 10 times
+* int c - to check lowercase
 * Description: The main function will be called without any parameters.
 *Return: Always 0 (Success)
 */
 
-void print_alphabet_x10(void)
+int(c);
 {
-int i = 0;
 char ch;
-while (i <= 10)
-{
 for (ch = 'a'; ch <= 'z'; ch++)
 {
-_putchar() * *;
-}
-i++;
+_putchar(ch);
 }
 _putchar('\n');
+}
+return (1);
 }
