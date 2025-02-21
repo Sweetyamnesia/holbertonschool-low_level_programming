@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
 #include "main.h"
 /**
 * main - Entry point
@@ -12,5 +11,6 @@ int main(void)
 {
 char message[] = "_putchar";
 printf("%s", message);
+putchar('\n');
 return (0);
 }
