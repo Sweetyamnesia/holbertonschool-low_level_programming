@@ -1,8 +1,0 @@
-#include <stdio.h>
-
-int main(void)
-{
-char message[] = "_putchar";
-printf("%s", message);
-return (0);
-}
