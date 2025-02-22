@@ -5,7 +5,8 @@
 
 /**
 * print_last_digit - Print the last digit of a number.
-* @n: the number.
+* @num: the number.
+* Return: Value of the last digit of number
 */
 
 int print_last_digit(int num)
