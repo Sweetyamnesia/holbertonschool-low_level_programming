@@ -1,20 +1,22 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
+#include <ctype.h>
 /**
-* int c - to check lowercase
-* Description: The main function will be called without any parameters.
-*Return: Always 0 (Success)
+* _islower - Checks if the character is lowercase.
+* @c: The character to be checked.
+*
+* Return: 1 if c is lowercase, 0 otherwise.
 */
 
-int(c);
+int _islower(int c)
 {
-char ch;
-for (ch = 'a'; ch <= 'z'; ch++)
+if (c >= 'a' && c <= 'z')
 {
-_putchar(ch);
-}
-_putchar('\n');
-}
 return (1);
+}
+else
+{
+return (0);
+}
 }
