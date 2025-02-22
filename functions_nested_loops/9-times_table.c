@@ -8,21 +8,36 @@
 void times_table(void)
 {
 int i = 0;
-for (i = 0; i <= 9; i++)
+while (i < 10)
 {
 int j = 0;
-for (j = 0; j <= 9; j++)
+while (j < 10)
 {
-int result = i * j;
-if (j == 0)
+int timetable = (i * j);
+if (timetable < 10)
 {
-printf("%d", result);
+_putchar(timetable + '0');
 }
 else
 {
-printf(", %2d", result);
+_putchar(((timetable) / 10) + '0');
+_putchar(((timetable) % 10) + '0');
+}
+if (j == 9)
+{
+_putchar('\n');
+}
+else
+{
+_putchar(44);
+_putchar(32);
+if ((i * (j + 1)) < 10)
+{
+_putchar(32);
 }
 }
-printf("\n");
+j++;
+}
+i++;
 }
 }
