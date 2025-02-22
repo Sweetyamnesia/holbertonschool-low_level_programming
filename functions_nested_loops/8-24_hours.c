@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <time.h>
+#include "main.h"
 
 /**
 * jack_bauer - Prints every minute of the day of
@@ -8,12 +9,20 @@
 
 void jack_bauer(void)
 {
-int hour, minute;
-for (hour = 0; hour <= 23; hour++)
+int heure = 0;
+while (heure < 24)
 {
-for (minute = 0; minute <= 59; minute++)
+int minute = 0;
+while (minute < 60)
 {
-printf("%02d:%02d\n", hour, minute);
+_putchar((heure / 10) + '0');
+_putchar(heure % 10 + '0');
+_putchar(':');
+_putchar((minute / 10) + '0');
+_putchar((minute % 10) + '0');
+_putchar('\n');
+minute++;
 }
+heure++;
 }
 }
