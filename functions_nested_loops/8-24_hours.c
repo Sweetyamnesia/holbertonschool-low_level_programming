@@ -13,12 +13,7 @@ for (hour = 0; hour <= 23; hour++)
 {
 for (minute = 0; minute <= 59; minute++)
 {
-printf(hour / 10 + '0');
-printf(hour % 10 + '0');
-printf(':');
-printf(minute / 10 + '0');
-printf(minute % 10) + '0');
-printf('\n');
+printf("%c%c:%c%c\n", (hour / 10) + '0', (hour % 10) + '0', (minute / 10) + '0', (minute % 10) + '0');;
 }
 }
 }
