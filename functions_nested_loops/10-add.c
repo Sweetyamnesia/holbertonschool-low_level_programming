@@ -10,15 +10,6 @@
 
 int add(int a, int b);
 
-/**
-* main - Entry point of the program.
-*
-* This function prompts the user to enter two integers, calls
-* the add function to calculate their sum, and displays the result.
-*
-* Return: Always returns 0 (Success).
-**/
-
 int main(void)
 {
 int num1, num2, sum;
