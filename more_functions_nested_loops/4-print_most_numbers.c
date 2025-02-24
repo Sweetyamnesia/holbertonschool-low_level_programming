@@ -16,4 +16,5 @@ if (n != 2 && n != 4)
 _putchar(48 + n);
 }
 }
+_putchar('\n');
 }
