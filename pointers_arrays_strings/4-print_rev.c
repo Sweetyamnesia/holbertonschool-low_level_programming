@@ -13,9 +13,8 @@ length = 0;
 while (*s != '\0')
 {
 length++;
-_putchar(*s++);
+s++;
 }
-length--;
 for (; length >= 0; length--)
 {
 s--;
