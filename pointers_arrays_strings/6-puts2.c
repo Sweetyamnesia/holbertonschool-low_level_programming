@@ -14,7 +14,7 @@ int i = 0;
 for (i = 0; str[i] != '\0'; i++)
 {
 if (str[i] != ' ' && number)
-printf("%c ", str[i]);
+_putchar(str[i]);
 number = 0;
 }
 if (str[i] == ' ')
