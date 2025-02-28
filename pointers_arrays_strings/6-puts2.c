@@ -9,21 +9,13 @@
 
 void puts2(char *str)
 {
-int number = 0;
-int i = 0;
-for (i = 0; str[i] != '\0'; i++)
+int length = 0;
+int i = 1;
+while (str[length] != '\0')
 {
-if (str[i] != ' ')
-{
-number = 1;
+length++;
 }
-else
-{
-if (number)
-{
-_putchar(str[i]);
-number = 1;
-}
-}
-}
+for (i = 0; i < length; i+=2)
+putchar(str[i]);
+putchar('\n');
 }
