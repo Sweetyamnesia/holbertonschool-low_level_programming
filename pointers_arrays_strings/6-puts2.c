@@ -13,10 +13,17 @@ int number = 1;
 int i = 0;
 for (i = 0; str[i] != '\0'; i++)
 {
-if (str[i] != ' ' && number)
+if (str[i] != ' ')
+{
+number = 1;
+}
+else
+{
+if (number)
+{
 _putchar(str[i]);
 number = 0;
 }
-if (str[i] == ' ')
-number = 1;
+}
+}
 }
