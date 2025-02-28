@@ -16,6 +16,6 @@ while (str[length] != '\0')
 length++;
 }
 for (i = 0; i < length; i+=2)
-putchar(str[i]);
-putchar('\n');
+_putchar(str[i]);
+_putchar('\n');
 }
