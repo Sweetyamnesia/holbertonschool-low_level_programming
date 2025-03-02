@@ -1,4 +1,5 @@
 #include <string.h>
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -11,6 +12,10 @@
 char *_strcat(char *dest, char *src)
 {
 char *ret = dest;
+while (*dest)
+{
+dest++;
+}
 while (*src)
 {
 *dest = *src;
