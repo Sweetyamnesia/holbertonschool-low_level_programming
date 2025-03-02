@@ -5,6 +5,7 @@
 * _strncpy - function that copies a string.
 * @dest: the buffer.
 * @src: the string pointed.
+* @n: parameter.
 * Return: the address of dest.
 **/
 
