@@ -25,7 +25,7 @@ else if (*s >= '0' && *s <= '9')
 found_digit = 1;
 if ((num > (INT_MAX / 10)) || ((num == (INT_MAX / 10)) && ((*s - '0') > 7)))
 {
-return (sign == 1) ? INT_MAX : INT_MIN;
+return ((sign == 1) ? INT_MAX : INT_MIN);
 }
 num = num * 10 + (*s - '0');
 }
