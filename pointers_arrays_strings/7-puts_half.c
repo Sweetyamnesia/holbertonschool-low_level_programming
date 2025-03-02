@@ -11,11 +11,13 @@ void puts_half(char *str)
 {
 int length = 0;
 int i = 0;
-while (str[length] + 1 / 2)
+while (str[length] != '\0')
 {
 length++;
 }
-for (i = 0; i < length; i++)
-putchar(str[i]);
-putchar('\n');
+for (i = 0; i < length / 2; i++)
+{
+_putchar(str[i]);
+}
+_putchar('\n');
 }
