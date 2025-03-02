@@ -11,10 +11,6 @@
 char *_strncpy(char *dest, char *src, int n)
 {
 char *ret = dest;
-while (*dest)
-{
-dest++;
-}
 while (n > 0 && *src)
 {
 *dest = *src;
@@ -22,6 +18,11 @@ dest++;
 src++;
 n--;
 }
+while (n > 0)
+{
 *dest = '\0';
+dest++;
+n--;
+}
 return (ret);
 }
