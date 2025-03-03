@@ -11,26 +11,20 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-int length = 0;
-int i = *accept;
-if (i < 2)
+unsigned int length = 0;
+unsigned int i, j;
+for (i = 0; s[i] != '\0'; i++)
 {
-return (1);
+for (j = 0; accept[j] != '\0'; j++)
+{
+if (s[i] == accept[j])
+{
+length++;
 }
-while (s[i] != '\0')
-{
-if (s[i] == s[length])
-{
-++length;
-++i;
 }
-else if (length == 0)
+if (s[i] !=  accept[j])
 {
-++i;
-}
-else
-{
---length;
+return (length);
 }
 }
 return (length);
