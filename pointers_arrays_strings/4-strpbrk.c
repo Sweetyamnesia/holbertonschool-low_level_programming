@@ -12,12 +12,12 @@
 char *_strpbrk(char *s, char *accept)
 {
 int length = 0;
-int i,j;
+int i, j;
 for (i = 0; s[i] != '\0'; i++)
 {
 for (j = 0; accept[j] != '\0'; j++)
 {
-if (s[i] == accept [j])
+if (s[i] == accept[j])
 {
 length++;
 break;
@@ -25,8 +25,8 @@ break;
 }
 if (s[i] != accept[j])
 {
-return((char *)s);
+return ((char *)s);
 }
 }
-return (NULL);  
+return (NULL);
 }
