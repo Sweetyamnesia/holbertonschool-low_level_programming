@@ -17,7 +17,7 @@ s++;
 }
 if (*s == c)
 {
-return (char *)s;
+return ((char *)s);
 }
 return (NULL);
 }
