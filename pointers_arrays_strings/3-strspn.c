@@ -20,6 +20,7 @@ for (j = 0; accept[j] != '\0'; j++)
 if (s[i] == accept[j])
 {
 length++;
+break;
 }
 }
 if (s[i] !=  accept[j])
