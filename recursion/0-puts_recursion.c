@@ -8,5 +8,6 @@ _puts_recursion : function that prints a string.
 
 void _puts_recursion(char *s)
 {
-  return (*s);  
+if (*s)
+return;
 }
