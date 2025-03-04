@@ -2,19 +2,22 @@
 #include <stdio.h>
 
 /**
-* _print_chessboard - function that prints the chessboard.
+* print_chessboard - function that prints the chessboard.
 * @a: the pointer to the array.
 */
 
 void print_chessboard(char (*a)[8])
 {
-int i, j;
-for (i = 0; i < 8; i++)
+int i = 0;
+int j = 0;
+while (i < 8)
 {
-for (j = 0; j < 8; j++)
+while (j < 8)
 {
-printf("%5d", a[i][j]);
+_putchar(a[i][j]);
+j++;
 }
 printf("\n");
+i++;
 }
 }
