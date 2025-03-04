@@ -22,7 +22,7 @@ return ((char *)s);
 }
 a++;
 }
-s++; 
+s++;
 }
 return (NULL);
 }
