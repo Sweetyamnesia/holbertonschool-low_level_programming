@@ -8,9 +8,9 @@ _puts_recursion : function that prints a string.
 
 void _puts_recursion(char *s)
 {
-while (*s != '\0')
+if (*s == '\0')
 {
+return;
 putchar(*s);
-s++;
 }
 }
