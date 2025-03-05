@@ -10,21 +10,11 @@
 void print_diagsums(int *a, int size)
 {
 int principal_diagonal = 0, secondary_diagonal = 0;
-int i, j;
+int i;
 for (i = 0; i < size; i++)
 {
-for (j = 0; j < size; j++)
-{
-if (i == j)
-{
-principal_diagonal += a[i * size + j];
+principal_diagonal += a[i * size + i];
+secondary_diagonal += a[i * size + (size - 1 - i)];
 }
-if ((i + j) == (size - 1))
-{
-secondary_diagonal += a[i * size + j];
-}
-}
-}
-putchar(principal_diagonal);
-putchar(secondary_diagonal);
+printf("%d, %d\n", principal_diagonal, secondary_diagonal);
 }
