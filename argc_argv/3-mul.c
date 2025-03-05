@@ -10,21 +10,14 @@
 
 int main(int argc, char *argv[])
 {
-int n1, n2;
-for (n1 = 0; n1 < argc; n1++)
+int num1 = atoi(argv[1]);
+int num2 = atoi(argv[2]);
+if (argc != 3)
 {
-for (n2 = 0; n2 < argc; n2++)
-{
-if (argc != 2)
-{
-printf("Error /n");
+printf("Error \n");
 return (1);
 }
-else if (argc >= 2)
-{
-printf(n1 * n2);
-}
+printf("%d\n", num1 * num2);
 return (0);
 }
-}
-}
+
