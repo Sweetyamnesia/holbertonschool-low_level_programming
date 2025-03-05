@@ -10,7 +10,6 @@
 
 int _sqrt_recursion(int n)
 {
-int root = _sqrt_recursion(n - 1);
 if (n < 0)
 {
 return (-1);
@@ -19,12 +18,8 @@ else if (n == 0 || n == 1)
 {
 return (n);
 }
-else if (root * root == n)
-{
-return (root);
-}
 else
 {
-return (root + 1);
+return (-_sqrt_recursion(sqrt(n) + n));
 }
 }
