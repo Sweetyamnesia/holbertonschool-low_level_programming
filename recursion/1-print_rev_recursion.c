@@ -10,19 +10,10 @@
 
 void _print_rev_recursion(char *s)
 {
-int length;
-length = 0;
 if (*s != '\0')
 {
-length++;
-s++;
+return;
 }
-length--;
-if (length >= 0)
-{
-length--;
-s--;
+_print_rev_recursion(s + 1);
 _putchar(*s);
-}
-_putchar('\n');
 }
