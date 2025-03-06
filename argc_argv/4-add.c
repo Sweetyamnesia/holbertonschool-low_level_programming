@@ -31,6 +31,7 @@ else if (i > 0)
 sum += i;
 }
 printf("%d\n", sum);
-}
 return (0);
+}
+return (i);
 }
