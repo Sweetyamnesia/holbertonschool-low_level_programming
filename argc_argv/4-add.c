@@ -11,27 +11,22 @@
 
 int main(int argc, char *argv[])
 {
-int sum;
-int i = 0;
-sum = atoi(argv[1]);
-i = atoi(argv[2]);
+int sum = 0;
+int i;
+int j = 0;
 for (i = 1; i < argc; i++)
 {
-if (i != argc)
+while (argv[i][j])
 {
-printf("O\n");
-}
-else if (!isdigit(i))
+if (!isdigit(argv[i][j]))
 {
 printf("Error\n");
 return (1);
 }
-else if (i > 0)
-{
-sum += i;
+j++;
+}
+sum += atoi(argv[i]);
 }
 printf("%d\n", sum);
 return (0);
-}
-return (i);
 }
