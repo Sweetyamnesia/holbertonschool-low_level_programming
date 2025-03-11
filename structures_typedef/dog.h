@@ -1,0 +1,19 @@
+#ifndef MAIN_H
+#define MAIN_H
+#include <stdio.h>
+
+/**
+* struct dog - is to define the dog.
+* @name: the name of the dog.
+* @age: the age of the dog.
+* @owner: the owner of the dog.
+*/
+
+struct dog
+{
+char *name;
+float age;
+char *owner;
+};
+
+#endif
