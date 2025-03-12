@@ -11,16 +11,14 @@
 
 char *_strdup(char *str)
 {
-char *str2;
-str2 = strdup(str);
+char *str2 = strdup(str);
 if (str == NULL)
 {
 return (NULL);
 }
-else
+if (str2 == NULL)
 {
-return (str2);
-}
-free(str);
 return (NULL);
+}
+return (str2);
 }
