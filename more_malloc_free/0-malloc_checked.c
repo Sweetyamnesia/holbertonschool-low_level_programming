@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <limits.h>
+#include <string.h>
 
 /**
 * malloc_checked - function that allocates memory.
@@ -11,13 +12,17 @@
 
 void *malloc_checked(unsigned int b)
 {
-int *ptr = malloc(b * sizeof(int));
+int *ptr;
+ptr = malloc(b * sizeof(int));
 if (ptr == NULL)
 {
 exit(98);
 }
-else
+if (b == 0)
 {
-return (ptr);
+free(ptr);
+return (NULL);
 }
+memset(ptr, 0, b * sizeof(int));
+return (ptr);
 }

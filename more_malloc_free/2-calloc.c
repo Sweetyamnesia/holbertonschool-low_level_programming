@@ -16,12 +16,12 @@ int **arr = (int **)malloc(sizeof(int *) * nmemb);
 unsigned int i = 0;
 if (arr == NULL)
 return (NULL);
-for (i = 0; i < size; i++)
+for (i = 0; i < nmemb; i++)
 {
-arr[i] = (int *)malloc(sizeof(int *) * size);
+arr[i] = (int *)malloc(sizeof(int));
 if (arr [i] == NULL)
 {
-for (i = 0; i < size; i++)
+for (i = 0; i < nmemb; i++)
 {
 free(arr[i]);
 }
