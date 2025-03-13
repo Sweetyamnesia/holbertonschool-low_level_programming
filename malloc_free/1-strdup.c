@@ -14,21 +14,17 @@ char *_strdup(char *str)
 int i = 0;
 int j = 0;
 int len1 = 0;
-int len2 = 0;
-char *str2 = malloc(sizeof(char) * len1 + len2 + 1);
-
+char *str2 = malloc(sizeof(char) * (len1 + 1));
 
 if (str == NULL)
 {
 return (NULL);
 }
 
-while (str[len1] || str[len2])
+while (str[len1])
 {
 if (str[len1])
 len1++;
-if (str[len2])
-len2++;
 }
 
 while (str[i] != '\0')
