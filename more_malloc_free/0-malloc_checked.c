@@ -12,17 +12,16 @@
 
 void *malloc_checked(unsigned int b)
 {
-int *ptr;
-ptr = malloc(b * sizeof(int));
+void *ptr;
+if (b == 0)
+return (NULL);
+ptr = malloc(b);
 if (ptr == NULL)
 {
 exit(98);
 }
-if (b == 0)
+else
 {
-free(ptr);
-return (NULL);
-}
-memset(ptr, 0, b * sizeof(int));
 return (ptr);
+}
 }
