@@ -12,22 +12,17 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-int **arr = (int **)malloc(sizeof(int *) * nmemb);
+int *arr = (int *)malloc(nmemb * size);
 unsigned int i = 0;
 if (arr == NULL)
 return (NULL);
-for (i = 0; i < nmemb; i++)
-{
-arr[i] = (int *)malloc(sizeof(int));
-if (arr [i] == NULL)
-{
-for (i = 0; i < nmemb; i++)
-{
-free(arr[i]);
-}
-free(arr);
+if (nmemb == 0)
 return (NULL);
-}
+if (size == 0)
+return (NULL);
+for (i = 0; i < nmemb; i++)
+{
+arr[i] = 0;
 }
 return (arr);
 }
