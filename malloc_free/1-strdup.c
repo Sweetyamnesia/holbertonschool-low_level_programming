@@ -23,9 +23,11 @@ return (NULL);
 
 while (str[len1])
 {
-if (str[len1])
 len1++;
 }
+
+for (i = 0; i < j; i++)
+str2[i] = str[i];
 
 while (str[i] != '\0')
 {
