@@ -15,7 +15,7 @@ int i = 0;
 int j = 0;
 int len1 = 0;
 int len2 = 0;
-char *str2 = malloc(sizeof(char) * i + 1);
+char *str2 = malloc(sizeof(char) * len1 + len2 + 1);
 
 
 if (str == NULL)
