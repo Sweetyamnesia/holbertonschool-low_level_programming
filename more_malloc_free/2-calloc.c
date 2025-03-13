@@ -23,9 +23,5 @@ for (i = 0; i < nmemb; i++)
 {
 arr[i] = 0;
 }
-while (arr[i])
-{
-i++;
-}
 return (arr);
 }
