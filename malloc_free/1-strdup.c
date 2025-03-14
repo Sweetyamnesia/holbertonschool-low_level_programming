@@ -27,18 +27,14 @@ len1++;
 
 str2 = malloc(sizeof(char) * (len1 + 1));
 
-for (i = 0; i < len1; i++)
-str2[i] = str[i];
-str2[i] = '\0';
-
-while (str[i] != '\0')
-{
-i++;
-}
-
 if (str2 == NULL)
 {
 return (NULL);
 }
+
+for (i = 0; i < len1; i++)
+str2[i] = str[i];
+str2[i] = '\0';
+
 return (str2);
 }
