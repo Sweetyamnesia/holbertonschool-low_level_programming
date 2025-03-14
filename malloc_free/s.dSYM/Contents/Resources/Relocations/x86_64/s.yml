@@ -1,0 +1,9 @@
+---
+triple:          'x86_64-apple-darwin'
+binary-path:     s
+relocations:
+  - { offset: 0x19, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100000E2F, symSize: 0x57 }
+  - { offset: 0x8C, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100000E2F, symSize: 0x57 }
+  - { offset: 0xC8, size: 0x8, addend: 0x0, symName: __strdup, symObjAddr: 0x0, symBinAddr: 0x100000E86, symSize: 0xA2 }
+  - { offset: 0x13B, size: 0x8, addend: 0x0, symName: __strdup, symObjAddr: 0x0, symBinAddr: 0x100000E86, symSize: 0xA2 }
+...
