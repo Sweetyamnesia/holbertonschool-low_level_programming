@@ -4,7 +4,7 @@
 
 /**
 * print_numbers - function that prints numbers, follow by a new line.
-* @separator: tstring to be print between numbers.
+* @separator: string to be print between numbers.
 * @n: number of integers.
 */
 
@@ -15,14 +15,14 @@ unsigned int i;
 int number;
 
 va_start(ap, n);
-if (separator == NULL)
-{
-return;
-}
-
 if (n == 0)
 {
 printf("\n");
+return;
+}
+
+if (separator == NULL)
+{
 return;
 }
 
