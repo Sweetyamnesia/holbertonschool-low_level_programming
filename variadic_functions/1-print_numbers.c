@@ -21,11 +21,6 @@ printf("\n");
 return;
 }
 
-if (separator == NULL)
-{
-return;
-}
-
 for (i = 0; i < n; i++)
 {
 if (i > 0 && separator != NULL)
