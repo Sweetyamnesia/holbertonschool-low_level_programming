@@ -15,11 +15,7 @@ unsigned int i;
 unsigned int number;
 
 va_start(ap, n);
-if (separator == NULL)
-return;
-
-if (n == 0)
-printf("\n");
+if (separator == NULL || n == 0)
 return;
 
 for (i = 0; i < n; i++)
