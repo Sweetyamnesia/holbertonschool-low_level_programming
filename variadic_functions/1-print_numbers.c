@@ -12,12 +12,9 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 {
 va_list ap;
 unsigned int i;
-unsigned int number;
+int number;
 
 va_start(ap, n);
-if (separator == NULL || n == 0)
-return;
-
 if (separator == NULL)
 {
 return;
