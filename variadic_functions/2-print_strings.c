@@ -17,6 +17,9 @@ const char *str;
 va_start(ap, n);
 if (separator == NULL)
 return;
+if (n == 0)
+return;
+printf("\n");
 
 for (i = 0; i < n; i++)
 {
