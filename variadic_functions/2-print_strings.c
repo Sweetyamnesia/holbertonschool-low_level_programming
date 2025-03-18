@@ -15,9 +15,6 @@ unsigned int i;
 const char *str;
 
 va_start(ap, n);
-if (separator == NULL)
-return;
-
 if (n == 0)
 {
 printf("\n");
