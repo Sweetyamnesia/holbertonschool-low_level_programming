@@ -17,9 +17,12 @@ const char *str;
 va_start(ap, n);
 if (separator == NULL)
 return;
+
 if (n == 0)
-return;
+{
 printf("\n");
+return;
+}
 
 for (i = 0; i < n; i++)
 {
@@ -32,7 +35,10 @@ if (str == NULL)
 {
 printf("(nil)");
 }
+else
+{
 printf("%s", str);
+}
 }
 va_end(ap);
 printf("\n");
