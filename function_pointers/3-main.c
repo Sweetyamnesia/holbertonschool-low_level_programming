@@ -3,10 +3,10 @@
 #include "3-calc.h"
 
 /**
-* main - check the code
-* @argc: number of arguments.
-*@argv: array of characters which contains arguments
-* Return: Always 0.
+* main - Entry point of the calculator program.
+* @argc: number of command-line arguments.
+* @argv: array of strings containing arguments.
+* Return: 0 on success, or an error code (98, 99 or 100).
 */
 
 int main(int argc, char *argv[])
