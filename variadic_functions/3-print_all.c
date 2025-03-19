@@ -19,24 +19,19 @@ va_start(list, format);
 
 while (format[i])
 {
-	if (format[i] == 'c' && format[i] == 'i')
-	{
-		c = va_arg(list, int);
-		i = va_arg(list, int);
-		f = va_arg(list, double);
-		s = va_arg(list, const char*);
-	}
-
-
 	if (s == NULL)
 	{
 	printf("(nil)");
 	}
 	else
 	{
+	c = va_arg(list, int);
 	printf("%c, ", c);
+	i = va_arg(list, int);
 	printf("%d, ", i);
+	f = va_arg(list, double);
 	printf("%f, ", f);
+	s = va_arg(list, const char*);
 	printf("%s", s);
 	}
 	i++;
