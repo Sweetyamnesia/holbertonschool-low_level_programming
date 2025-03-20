@@ -12,6 +12,7 @@ void print_all(const char * const format, ...)
 va_list list;
 char c;
 int i = 0;
+float f;
 const char *s;
 
 va_start(list, format);
@@ -28,6 +29,8 @@ while (format[i])
 	printf("%c, ", c);
 	i = va_arg(list, int);
 	printf("%d, ", i);
+	f = va_arg(list, double);
+	printf("%f, ", f);
 	s = va_arg(list, const char*);
 	printf("%s", s);
 	}
