@@ -23,7 +23,8 @@ while (format[i])
 	{
 	printf("(nil)");
 	}
-	else
+
+	if (s != NULL)
 	{
 	c = va_arg(list, int);
 	printf("%c, ", c);
