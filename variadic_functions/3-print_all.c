@@ -3,50 +3,44 @@
 #include <stdio.h>
 
 /**
- * print_all - Prints anything based on a given format.
- * @format: The format string containing type specifiers.
- */
+* print_all - function that prints anything.
+* @format: list of types of arguments.
+*/
 
 void print_all(const char * const format, ...)
 {
-	va_list list;
-	int i = 0;
-	char c;
-	int num;
-	float f;
-	const char *s;
-	char sep = 0;
+va_list list;
+char c;
+int i = 0;
+int num;
+float f;
+const char *s;
+char separator = 0;
 
-	va_start(list, format);
-	while (format && format[i] != '\0')
+va_start(list, format);
+
+while (format && format[i])
+{
+	if (separator)
 	{
-		if (sep)
-			printf(", ");
-		if (format[i] == 'c')
-		{
-			c = (char) va_arg(list, int);
-			printf("%c", c);
-		}
-		else if (format[i] == 'i')
-		{
-			num = va_arg(list, int);
-			printf("%d", num);
-		}
-		else if (format[i] == 'f')
-		{
-			f = (float) va_arg(list, double);
-			printf("%f", f);
-		}
-		else if (format[i] == 's')
-		{
-			s = va_arg(list, const char *);
-			if (s == NULL)
-				s = "(nil)";
-			printf("%s", s);
-		}
-		sep = 1;
-		i++;
+	printf(", ");
 	}
-	printf("\n");
-	va_end(list);
+
+	if (s != NULL)
+	{
+	c = va_arg(list, int);
+	printf("%c, ", c);
+	num = va_arg(list, int);
+	printf("%d, ", num);
+	f = va_arg(list, double);
+	printf("%f, ", f);
+	s = va_arg(list, const char*);
+	printf("%s", s);
+	}
+	separator = 1;
+	i++;
+}
+
+printf("\n");
+va_end(list);
 }
