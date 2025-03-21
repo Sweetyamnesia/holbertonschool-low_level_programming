@@ -9,38 +9,36 @@
 
 void print_all(const char * const format, ...)
 {
-va_list list;
-char c;
-int i = 0;
-int num;
-float f;
-const char *s;
-char separator = 0;
+	va_list list;
+	int i = 0;
+	char *s, sep = 0;
 
-va_start(list, format);
-
-while (format && format[i])
-{
-	if (separator)
+	va_start(list, format);
+	while (format && format[i])
 	{
-	printf(", ");
+		if (format[i] == 'c' || format[i] == 'i' ||
+		format[i] == 'f' || format[i] == 's')
+		{
+			if (sep)
+				printf(", ");
+
+			if (format[i] == 'c')
+				printf("%c", (char) va_arg(list, int));
+			else if (format[i] == 'i')
+				printf("%d", va_arg(list, int));
+			else if (format[i] == 'f')
+				printf("%f", va_arg(list, double));
+			else if (format[i] == 's')
+			{
+				s = va_arg(list, char *);
+				printf("%s", s ? s : "(nil)");
+			}
+
+			sep = 1;
+		}
+		i++;
 	}
 
-	if (s != NULL)
-	{
-	c = va_arg(list, int);
-	printf("%c, ", c);
-	num = va_arg(list, int);
-	printf("%d, ", num);
-	f = va_arg(list, double);
-	printf("%f, ", f);
-	s = va_arg(list, const char*);
-	printf("%s", s);
-	}
-	separator = 1;
-	i++;
-}
-
-printf("\n");
-va_end(list);
+	printf("\n");
+	va_end(list);
 }
