@@ -10,6 +10,7 @@
 * @owner: The owner of the dog.
 * Return: NULL if the function fails, otherwise a pointer to the new dog.
 */
+
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *new_dog;
