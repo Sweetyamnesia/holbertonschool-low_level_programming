@@ -14,8 +14,12 @@ size_t list_len(const list_t *h)
 	int count = 0;
 	const list_t *current = h;
 
-	if (current->str != NULL)
-	count++;
-	current = current->next;
+	while (current != NULL)
+	{
+		if (current->str != NULL)
+		count++;
+		current = current->next;
+	}
+
 	return (count);
 }
