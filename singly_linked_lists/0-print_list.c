@@ -12,40 +12,23 @@
 size_t print_list(const list_t *h)
 {
 	int count = 0;
-
 	const list_t *current = h;
-
-	if (h == NULL)
-	printf("[0] (nil)");
-	return (0);
 
 	while (current != NULL)
 	{
-		printf("[");
-
 		if (current->str != NULL)
-			printf("prev");
-
-		else
-			printf("NULL");
-			printf("[%u] ", current->len);
-			printf("][%s][", current->str);
-			count++;
-
-		if (current->next != NULL)
-			printf("next");
-
-		else
-			printf("NULL");
-			printf("]");
-
-			if (current->next != NULL)
-			printf("<->");
-			count++;
-
-			current = current->next;
+		{
+			printf("[%u]", current->len);
+			printf("[%s] \n", current->str);
 		}
-		printf("\n\n");
+		else
+		{
+			printf("[0] (nil) \n");
+		}
 
-		return (count);
+		count++;
+		current = current->next;
 	}
+		printf("\n");
+		return (count);
+}
