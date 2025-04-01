@@ -9,7 +9,7 @@
  * Return: Always EXIT_SUCCESS.
  */
 
-int print_dlistint(dlistint_t *head);
+size_t print_dlistint(const dlistint_t *h);
 int main(void)
 {
 	dlistint_t *head;
