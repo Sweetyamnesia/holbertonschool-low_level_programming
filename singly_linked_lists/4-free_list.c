@@ -4,8 +4,8 @@
 #include "lists.h"
 
 /**
- * free_list - Fucntion that frees the linked list.
- * @head: Double pointer to the head of the list.
+ * free_list - Function that frees the linked list.
+ * @head: Pointer to the head of the list.
  */
 
 void free_list(list_t *head)
@@ -14,11 +14,11 @@ void free_list(list_t *head)
 
 	if (head == NULL)
 	return;
-	else
+
+	while (head != NULL)
 	{
 		tmp = head;
 		head = head->next;
-		free(head->str);
 		free(tmp);
 	}
 }
